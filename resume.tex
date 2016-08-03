@@ -1,111 +1,196 @@
-\documentclass[margin,line]{res}
-\usepackage{hyperref}
-%\hypersetup{hidelinks} % Link colors
-\usepackage[utf8x]{inputenc}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Medium Length Graduate Curriculum Vitae
+% LaTeX Template
+% Version 1.2 (3/28/15)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Rensselaer Polytechnic Institute 
+% (http://www.rpi.edu/dept/arc/training/latex/resumes/)
+%
+% Modified by:
+% Daniel L Marks <xleafr@gmail.com> 3/28/2015
+%
+% Important note:
+% This template requires the res.cls file to be in the same directory as the
+% .tex file. The res.cls file provides the resume style used for structuring the
+% document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+%-------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%-------------------------------------------------------------------------------
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% You can have multiple style options the legal options ones are:
+%
+%   centered:	the name and address are centered at the top of the page 
+%				(default)
+%
+%   line:		the name is the left with a horizontal line then the address to
+%				the right
+%
+%   overlapped:	the section titles overlap the body text (default)
+%
+%   margin:		the section titles are to the left of the body text
+%		
+%   11pt:		use 11 point fonts instead of 10 point fonts
+%
+%   12pt:		use 12 point fonts instead of 10 point fonts
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[margin]{res}  
+
+% Default font is the helvetica postscript font
+\usepackage{helvet}
+
+% Increase text height
+\textheight=700pt
 
 \begin{document}
-\name{\Large Vikesh Kumar Tiwari}
+
+%-------------------------------------------------------------------------------
+%	NAME AND ADDRESS SECTION
+%-------------------------------------------------------------------------------
+\name{Vikesh Kumar Tiwari}
+
+% Note that addresses can be used for other contact information:
+% -phone numbers
+% -email addresses
+% -linked-in profile
+
+\address{The Panoramic\\1321 Mission street\\San Francisco, CA - 94103}
+\address{(425)-979-8844\\hi@eulercoder.me\\http://eulercoder.me\\GitHub : github.com/vicky002 \\LinkedIn: /in/vikeshtiwari}
+
+
+% Uncomment to add a third address
+%\address{Address 3 line 1\\Address 3 line 2\\Address 3 line 3}
+%-------------------------------------------------------------------------------
 
 \begin{resume}
 
-\section{Contact\\Information}  
-E-mail: tvicky002@gmail.com\\
-Phone: (+91)9930-631-359\\
-Website: \url{http://vicky002.github.io}\\
+%-------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%-------------------------------------------------------------------------------
+\noindent\makebox[\linewidth]{\rule{\paperwidth}{0.4pt}}
+\section{\underline{EDUCATION}}
+\textbf{Bachelor of Engineering in Information Technology \hfill June 2017}\\
+{Sardar Patel Institute of Technology, Mumbai, India}\\
+{\sl \underline{Status}}: 3rd Year 
+%-------------------------------------------------------------------------------
 
-
-
-\section{Education}
-Sardar Patel Institute of Technology - Information Technology\\
-2013 - 2017(Expected)\\
-
-\section{Projects}
-\begin{itemize} \itemsep -4pt
-\item \textbf{C++ and Algorithms Sublime Text Package }\\
-Sublime C++ and Algorithms code snippets. Uses C++ \& JavaScript. \\
-\url{http://goo.gl/MbQKgR/}\\
-
-\item \textbf{FlagQuiz Android App}\\
-A simple andorid game in which there are 10 Quizzes and user have to guess from 3 options. There are additional features like select particular region, show more options and select country region. Uses Java \& Android.\\
- \url{http://goo.gl/NKXJ5q/}\\
-
-\item \textbf{AlgoWiki - All CS resources at one place.}\\
-On Internet, There is a lot of knowledge on different topics scarred over different sources. Most of the knowledge is
-either online on the web or with the people as human knowledge. AlgoWiki is a platform to bind this scattered piece of knowledge at one place. Uses Python.\\
-\url{http://www.algowiki.in}\\
-
-\item \textbf{L-Commands - Powerful Linux Commands.}\\
-Created few Linux commands for Mathematical calculations, Downloading and parsing web pages, compiling and running codes and command to add .gitignore files in GitHub Repositories. Uses Shell Scripting \& Python.\\
-\url{http://git.io/v4LVP}
-
+%-------------------------------------------------------------------------------
+%	PROJECTS SECTION
+%-------------------------------------------------------------------------------
+\vspace{-4mm}
+\section{\underline{SKILLS}}
+C, C++, PHP, Python(+ Flask), SQL, HTML\\
+PhpStorm, Pycharm, IRC, Slack, Sublime, Vim
+\vspace{-4mm}
+\section{\underline{TECHNICAL}
+\underline{EXPERIENCE}}
+\textbf{Software Engineering Intern - Slack, San Francisco} \hfill
+\textbf{Jun'16 - Present}\\
+\vspace{-4mm}
+\begin{itemize}
+\setlength{\itemsep}{0pt}
+\item Working as Test Infrastructure engineering intern.
+\end{itemize}
+\vspace{-4mm}
+\textbf{Software Engineering Intern - Directi, Mumbai} \hfill
+\textbf{Jan'16 - Mar'16}\\
+\vspace{-4mm}
+\begin{itemize}
+\setlength{\itemsep}{0pt}
+\item Worked on OAuth 2.0 API development using Slim and Swagger.
+\item Developer page where developer can generate token and test APIs.
+\end{itemize}
+\vspace{-4mm}
+\textbf{Software Engineering Intern - Directi, Mumbai} \hfill \textbf{March'15 - Sept'15}
+\begin{itemize}
+\setlength{\itemsep}{0pt}
+\item Implemented Test Data Judge using Sphere Online Judge to show failed testcase.
+\item Implemented Flowchat Evaluator to create flowcharts with Debug and Execute option.
+\item Worked on Database cleaning, collected stats of the problems to move in different problem sections.
+\item Wrote programming problems for Beginner Section on CodeChef. 
+\end{itemize}
+\vspace{-5mm}
+\section{\underline{PROJECTS}}
+\textbf{Gitignore (Python)}
+\begin{itemize}
+\setlength{\itemsep}{0pt}
+\item .gitignore: gitignore command is used to add gitignore files in any git repository. over 2k+ downloads. {https://pypi.python.org/pypi/gitignore} \end{itemize}
+\vspace{-3mm}
+\textbf{Bots (Python)}:
+\begin{itemize}
+\item Charmander is a bot for Slack which uses Google to answer queries. It supports YouTube, Maps, Gifs, GitHub, Emoji and other many features. 
+\item The L is bot for Slack and Twitter which uses Wolframalpha API to answer questions on any topic.
+\end{itemize}
+\vspace{-3mm}
+\textbf{Web Music Player (HTML+JavaScript)}
+\begin{itemize}
+\setlength{\itemsep}{0pt}
+\item Created a drag and drop music player with shuffle and repeat options.
+\end{itemize}
+\vspace{-3mm}
+\textbf{Open Source Contributions}:
+\begin{itemize}
+\setlength{\itemsep}{0pt}
+\item All projects(15+) are open source and available on GitHub: vicky002
+\item Validated all the documentation of Apple's Swift Repository fixed Typos and Grammar errors.
+\item Fixed a bug in installation script and broken links of Google's Web Fundamental repository.
+\item Worked on FOSSASIA website optimized images and broken links.
 \end{itemize}
 
+%-------------------------------------------------------------------------------
 
+%---------------------------------------------------------------------------
 
-\section{Experience}
-\begin{itemize} \itemsep -4pt
+%-------------------------------------------------------------------------------
+%	EXPERIENCE SECTION
+%-------------------------------------------------------------------------------
+% Modify the format of each position
+\begin{format}
+\title{l}\employer{r}\\
+\dates{l}\location{r}\\
+\body\\
+\end{format}
+%-------------------------------------------------------------------------------
+\vspace{-5mm}
+\section{\underline{LEADERSHIP}\\
+\underline{EXPERIENCE}}
+\employer{Chairperson}
+\location{SPIT}
+\dates{2014 - Present}
+\title{\textbf{SPIT Coder's Club}}
+\begin{position}
+Founded Coder's Club in college to promote open source. Started Monthly Coding Contest series and 60 days open source development initiative.
+\end{position}
+\vspace{-5mm}
+\employer{Technical Head}
+\location{SPIT}
+\dates{2015 - Present}
+\title{\textbf{IT Student's Association}}
+\begin{position}
+Conducted workshops and worked on all the technical events of college.
+\end{position}
 
-\item\textbf{Directi, Software Engineering Intern, March 2015 to September 2015}\\
-Worked in CodeChef Department. CodeChef is non-profit educational initiative by Directi to help students and professionals test and improve their coding skills. Apart from this, it aims to reach out to students while they are young and inculcate a culture of programming in India\\
-- Worked on Online Compiler Test Data Judge. Uses C++. \\
-- CodeChef Learning Module website for kids. Uses Python-Django.\\
-- Collecting Education Resources. Uses Python.
-
+%-------------------------------------------------------------------------------
+%	Interests
+%-------------------------------------------------------------------------------
+\vspace{-5mm}
+\section{\underline{EXTRA-} \\
+\underline{CURRICULAR }}
+\begin{itemize}
+\item Top 5\% in IEEE Xtreme Coding Competition World wide.
+\item Ranked 3rd in DJ Shanghvi TechFest coding competition.
+\item Active reader and writer on Quora. 
 \end{itemize}
 
-\section{Additional Experience}
-\begin{itemize} \itemsep -4pt
- \item\textbf{Technical Head - Information Technology Student's Association, SPIT }\\
-As a Technical Head I was involved in all the technical events of College. Organizing Technical Events and workshops in college. I was also a part of college web team.\\
-
- \item\textbf{ChairPerson -  SPIT Coder's Club}\\
-Started Coder's Club in college to promote Programming and Open source development. Started Monthly Coding Contest series, to help students learn and improve programming skills. Started 60 Days open source development challenge to develop open source projects in 60 days.\\
-- Blog: \url{http://spitcoderclub.blogspot.in/}
-\\
-\item\textbf{CodeChef Campus Representative}\\
-Worked as Campus Representative for CodeChef, to promote competitive programming and CodeChef Contests in college.
-\end{itemize}
-
-
-\section{Languanges and Tools}
-C, C++, Python, Django, PHP, HTML, CSS, JS, SQL,.\\
-Nginx, Apache Web server, Advanced Linux.\\ 
-Git, Vim, Sublime, PhpStorm, Android Studio, Eclipse.\\
-Slack, Trello, IRC.\\
-
-
-\section{Extra-Curricular \& Achievements}
-
-\begin{itemize} \itemsep -4pt
- \item My ream ranked 128th in IEEE Xtreme Programming, 2013.\\
- \item Active Participant in Competitive Programming and Other Coding Competitions. \\
- - Ranked 3rd in DJ Shaghvi College Techfest Coding Competition.\\
- - Current World rank 5113 among 303030 registered users on Sphere Online Judge. \\
- - Current World rank 5318 among 45000+ active programmers on CodeChef.\\
- - Active participant in other coding platforms Hackerearth, Hackerrank, USACO and CodeForces.
-\item Most viewed writer on Quora of topic Introduction to Algorithms.
-\end{itemize}
-
-
-
-
-\section{Web Presence}
-\begin{itemize} \itemsep -4pt
- \item Quora (I write and read) : \url{https://www.quora.com/Vikesh-Tiwari}\\
- \item GitHub (I share my code) : \url{https://github.com/vicky002}\\
- \item Blog (I share my experiences) : \\ 
- - \url{https://prmgevryday.quora.com/}\\
- - \url{http://vicky002.github.io/myblog}\\
- - \url{http://topblogcoder.blogspot.in/}\\
- \item Online Web Presence with name : \textbf{vicky002}, \url{https://goo.gl/I9kSp3}\\
-\end{itemize}
-
-
-
-
-
-
-
+%-------------------------------------------------------------------------------
 \end{resume}
 \end{document}
